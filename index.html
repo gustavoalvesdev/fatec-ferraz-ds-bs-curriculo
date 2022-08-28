@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+        
+        .whats-container {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            bottom: 10px;
+            right: 10px;
+            z-index: 999;
+        }
+        
+        .whats-container img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">&lt;/&gt; Gustavo Alves</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formação</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./src/assets/images/gustavo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Desenvolvedor Full-Stack Focado em Soluções Completas para Web</h1>
+                <p class="lead">Meu nome é Gustavo Alves, sou desenvolvedor Web na <a href="https://gustavoalvesdev.com.br" target="_blank">GS7 Sistemas</a>. Tenho 3 anos de experiência no desenvolvimento de sistemas e intranets focados para a Web, tendo atuado também
+                    como Consultor Oracle NetSuite, focado em soluções corporativas para empresas de médio e grande porte através da API Oracle SuiteScript, bem como soluções de integrações para aplicações de negócio em plataforma Java</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a role="button" href="https://github.com/gustavoalvesdev/" target="_blank" class="btn btn-primary btn-lg px-4 me-md-2"><i class="bi bi-github"></i> GitHub</a>
+                    <a role="button" href="https://gustavoalvesdev.com.br" target="_blank" class="btn btn-primary btn-lg px-4 me-md-2"><i class="bi bi-globe"></i> Site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <h1>Formação Acadêmica</h1>
+
+        <p>
+            <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Graduação em Análise e Desenvolvimento de Sistemas<br>
+                2018 - presente <i class="bi bi-chevron-double-down"></i>
+            </button>
+        </p>
+        <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body">
+                    <p><strong>Instituição:</strong> FATEC Ferraz de Vasconcelos</p>
+                    <p><strong>Semestre Atual: </strong> 6º</p>
+                    <p><strong>Período</strong>: Noite / Manhã</p>
+                    <p><strong>Previsão de Conclusão: </strong> Julho 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
+                Técnico em Informática 2013 - 2014 <i class="bi bi-chevron-double-down"></i>
+            </button>
+        </p>
+        <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                <div class="card card-body">
+                    <p><strong>Instituição:</strong> ETEC Ferraz de Vasconcelos</p>
+                    <p><strong>Status: </strong> Concluído</p>
+                    <p><strong>Ano de Conclusão</strong>: 2014</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <h1>Experiência Profissional em Desenvolvimento</h1>
+
+        <p>
+            <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample">
+                Desenvolvedor Web Full Stack 2020 - presente <i class="bi bi-chevron-double-down"></i>
+            </button>
+        </p>
+        <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                <div class="card card-body">
+                    <p><strong>Empresa:</strong> GS7 Sistemas</p>
+                    <p><strong>Responsabilidades: </strong> Criação de Websites, Lojas Virtuais, Desenvolvimento de Sistemas, Aplicativos, Landing Pages, Integrações, WebServices, Consultoria.</p>
+                    <p><strong>Data</strong>: 02/2020 - presente</p>
+                    <p><strong>Site: </strong>
+                        <a target="_blank" href="https://gustavoalvesdev.com.br">Link</a></p>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-primary form-control" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample4" aria-expanded="false" aria-controls="collapseWidthExample">
+                Consultor Oracle NetSuite - 2019 <i class="bi bi-chevron-double-down"></i>
+            </button>
+        </p>
+        <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample4">
+                <div class="card card-body">
+                    <p><strong>Empresa:</strong> Foco Solution Provider</p>
+                    <p><strong>Responsabilidades: </strong> Integrações entre plataformas corporativas, Suitelet e SuiteScript API, Modelagem de Negócios, Análise de Melhorias, Sustentação de Sistemas, Treinamento, Implantação de ERP, continuidade de negócios,
+                        consultoria de integrações WS, Programação de Bases de dados SQL.</p>
+                    <p><strong>Data</strong>: 01/2019 - 10/2019</p>
+                    <p><strong>Site: </strong>
+                        <a target="_blank" href="http://focosp.com/">FocoSP</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="whats-container">
+        <a href="https://wa.me/5511996531308" target="_blank" class="whats-link"><img class="whats-logo" src="./src/assets/images/whats.png"></a>
+        <!-- whats-link -->
+    </div>
+    <!-- whats-container -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
